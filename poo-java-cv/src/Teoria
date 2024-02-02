@@ -1,0 +1,296 @@
+_____________________________________________#01a________________________________________
+O QUE E PROGRAMACAO ORIENTADA A OBJETOS?
+
+-> POO: Programacao orientada a objeto
+-> Objetivo: aproximar o mundo digital ao mundo real
+-> Como era?
+    -> baixo nivel
+        -> linguagem de maquina
+    -> auto nivel:
+        -> programacao linear
+        -> programacao estruturada
+        -> programacao modular
+        -> POO
+-> Quem criou?
+    -> Alan Kay
+        -> logica(matematica) x celulas(biologia)
+->  Como era?
+    -> dados globais (pro1-pro2-pro3-pro4)
+        obs: os procedimentos nao vao usar todos os dados globais.
+-> Como ficou?
+    -> dados de objetos (metodo1 - metodo2)
+        obs: metodos vao ousar todos os dados do objeto.
+-> Linguagens POO:
+    -> C++ (fundamentada em objetos)
+    -> PHP (baseada em classes)
+    -> JAVA (obrigado a programar orientada a objeto)
+    -> Pyton (POO)
+    -> Ruby
+-> Vantagens:
+    -> Confiavel: o isolamento entre as partes gera software seguro.
+    -> Oportuno: ao dividir tudo em partes, varias delas podem ser desenvolvidas em parelelo.
+    -> Manutenivel: atualizar um software e mais facil.
+    -> Extensivel: o software nao e estatico. ele deve crescer para permanecer util.
+    -> Reutilizavel: podemos usar objetos de um sistema que criamos em outro sistema futuro.
+    -> Natural: voce se preocupa mais na funcionalidade do que nos detalhes de implementacao.
+
+_____________________________________________#02a________________________________________
+O QUE E UM OBJETO?
+
+-> OBJETO:
+    -> coisa material ou abstrata que pode ser percebida pelos sentidos e descrita por meio das suas
+    caracteristicas, comportamentos e estado atual.
+-> Exemplo: caneta
+    -> a caneta (objeto) e o modelo (classe)
+    -> em POO uma classe sempre tem que responder a 3 perguntas:
+        -> coisas que eu tenho (ATRIBUTOS)
+        -> coisas que eu faco (METODOS)
+        -> como eu estou agora?(ESTADO)
+    -> no exemplo da caneta, o moldelo(classe):
+    -> coisas que eu tenho: modelo, cor, ponta, carga, tampada, ...
+    -> coisas que eu faco: escrever, rabiscas, pintar, tampar, destampar, ...
+    -> como eu estou agora? destampada, escrevendo, com 50% de carga, ....
+-> Criando a classe caneta:
+    Classe Caneta
+        modelo: Caractere
+        cor: Caractere
+        ponto: Real
+        carga: Inteiro
+        tampada: Logico
+
+        Metodo rabiscar()
+            Se (tampada) entao
+                Escreva ("Erro")
+            senao
+                Escreva ("Rabisco")
+            FimSe
+
+        FimMetodo
+
+        Metodo tampar()
+            tampada = verdadeiro
+
+        FimMetodo
+    FimClasse
+-> No exemplo caneta:
+    ->ATRIBUTOS: modelo, cor, ponta, carga, tampada
+    ->METODOS: escrever, rabiscar, pintar, tampar, destampar
+    ->ESTADO: e determinado num momento especifico - destampada, azul, 90% de carga, ...
+-> Instanciar: gerar um objeto a partir de uma classe.
+-> exemplo de instanciar:
+    -> c1 = nova Caneta
+    -> c1.cor = "azul"
+    -> c1.ponta = 0.5
+    -> c1.tampada = falso
+    -> c1.rabiscar()
+
+    -> c2 = nova Caneta
+    -> c2.cor = "vermelho"
+    -> c2.ponta = 1.0
+    -> c2.tampada = falso
+    -> c2.tampar()
+
+-> CLASSE: define os atributos e metodos comuns que serao compartilhados por um objeto.
+-> OBJETO: e a instancia de uma classe.
+
+_____________________________________________#03a________________________________________
+O QUE E VISIBILIDADE DE UM OBJETO?
+
+-> Diagrama de classes:
+    --------------------
+    -> classe: Caneta
+    --------------------
+    -> atributos:
+        ->modelo
+        ->cor
+        ->carga
+        ->tampada
+    --------------------
+    -> metodos:
+        -> escrever()
+        -> rabiscar()
+        -> pintar()
+        -> tampar()
+        -> destampar()
+    ---------------------
+
+-> Modificadores de visibilidade:
+    -> indicam o nivel de acesso aos componentes internos de uma classe:
+        -> + : a classe atual e todas as outras classes.
+        -> - : somente a classe atual
+        -> # : a classe atual e todas as suas sub-classes.
+    -> exemplo:
+    --------------------------------
+    Classe Caneta
+    --------------------------------
+    publico modelo: Caractere
+    publico cor: Caractere
+    privado ponta: Real
+    protegido carga: inteiro
+    protegido tampada: logico
+    --------------------------------
+    publico Metodo escrever()
+
+            FimMetodo
+    publico Metodo rabiscar()
+
+            FimMetodo
+    ---------------------------------
+    FimClasse
+    -> criando um objeto a partir da classe acima:
+
+    c1 = nova Caneta
+    c1.modelo = "BIC cristal" -> vai funcionar
+    c1.cor = "Azul" -> vai funcionar
+    c1.ponta = 0.5 -> nao vai funcionar
+    c1.carga = 80 -> nao vai funcionar
+    c1.tampada = falso -> nao vai funcionar
+    c1.escrever -> vai funcionar
+    c1.rabiscar -> nao vai funcionar
+
+_____________________________________________#04a________________________________________
+METODOS ESPECIAIS
+
+-> Metodos acessores(Getters) - "pega alguma informacao"
+    -> e = nova Estante (instanciando a classe Estante a partir do objeto e)
+    -> t = e.totDoc: acessando o total de documentos ("liver")
+    -> t = e.getTotDoc(): acessando restritamente o total de documentos
+-> Metodos modificadores(Setters) - "modifica alguma informacao"
+    -> e = nova Estante (instanciando a classe Estante a partir do objeto e)
+    -> e.totDoc = e.totDoc + 1: acrescentando alguma informacao ("livre")
+    -> e.setTotDoc(doc): modificando restritamento alguma informacao
+
+-> Exemplo:
+    ------------------------
+    Caneta
+    ------------------------
+    + modelo
+    - ponta
+    ------------------------
+    + getModelo()
+    + setModelo(m)
+    + getPonta()
+    + setPonta(p)
+    ------------------------
+    OBS: cada atributo implica num metodo get e num metodo set.
+
+    -> Exemplo("codigo")
+    Classe Caneta
+        ATRIBUTOS:
+        publico modelo: caractere
+        privado ponta: real
+        METODOS:
+
+        publico Metodo getModelo()
+            retorne modelo
+        FimMetodo
+
+        publico Metodo setModelo(m)
+            (m:caractere)
+            modelo = m
+        FimMetodo
+
+        publico Metodo getPonta()
+            retorne ponta
+        FimMetodo
+
+        publico Metodo setPonta(p)
+            (p:real)
+            ponta = p
+        FimMetodo
+
+    FimClasse
+
+    --------------------------------
+
+    c1 = nova Caneta
+    c1.setModelo("BIC Cristal")
+    c1.setPonta(0.5)
+    Escreva (c1.getModelo()) -> BIC Cristal
+
+-> Metodo construtor(construct)
+    ->Exemplo1:
+        Classe Caneta
+
+        Metodo construtor()
+            tampar()
+            cor = "Azul"
+        FimClasse
+
+    ->Exemplo2:
+        Classe Caneta
+
+            Metodo construtor(m:caracterre, c:caractere, p:real)
+            setModelo(m)
+            setCor(c)
+            setPonta(p)
+            tampar()
+        FimClasse
+
+        c1 = nova Caneta ("BIC", "AZUL", 0.5)
+_____________________________________________#05a________________________________________
+EXEMPLO PRATICO
+
+-> Conta de banco:
+-> 2 pessoas: Jubileu e Creusa
+-> Abrir uma conta:
+    -> conta corrente (Creusa -> R$ 500,00)
+        -> abrir a conta e depositar o dinheiro
+        -> sacar R$ 100,00
+    -> conta poupanca (Jubileu -> R$ 300,00)
+        -> abrir a conta e depositar o dinheiro
+->  Atributos da classe conta no banco:
+    numConta
+    tipo
+    dono
+    saldo
+    status(se a conta esta aberta ou fechada)
+-> Metodos da classe conta no banco:
+    abrirConta()
+    fecharConta()
+    depositar()
+    sacar()
+    pagarMensal()
+-> DIAGRAMA DE CLASSE:
+        --------------------------------------
+        ContaBanco
+        --------------------------------------
+        +numConta
+        #tipo
+        -dono
+        -saldo
+        -status
+        --------------------------------------
+        +abrirConta()
+        +fecharConta()
+        +depositar()
+        +sacar()
+        +pagarMensal()
+        --------------------------------------
+-> obs1:
+    *tipo: conta corrente (cc) / conta poupanca (cp)
+    *abrirConta() -> muda o status para verdadeiro/ao abrir a conta -> cp ou cc.
+    *se abrir uma conta corrente-> R$ 50,00 / se abrir uma conta poupanca -> R$ 150,00
+    *fecharConta() -> nao pode ter dinheiro o debito (tem que sacar se tiver dinheiro ou pagar se tiver debito)
+    *depositar() -> a conta precisa estar aberta
+    *sacar() -> a conta precisa estar aberta e ter saldo
+    *pagarMensal() -> cc R$ 12,00 cp R$ 20,00
+-> obs2:
+    --------------------------------------
+            +abrirConta()
+            +fecharConta()
+            +depositar()
+            +sacar()
+            +pagarMensal()
+    --------------------------------------
+    para cada ATRIBUTO:
+    ->getmetodo()
+    ->setmetodo()
+-> obs3:
+    *metodo construtor:
+        ->  sempre que uma conta for aberta ->  inicialmente: status (falso) e saldo (zero)
+
+
+
+
+
