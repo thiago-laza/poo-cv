@@ -291,22 +291,6 @@ EXEMPLO PRATICO
         ->  sempre que uma conta for aberta ->  inicialmente: status (falso) e saldo (zero)
 
 
-_____________________________________________#06a________________________________________
-ENCAPSULAMENTO
 
-Exemplo: PILHA
 
-Encapsular: ocultar partes independentes da implementacao, permitindo construir partes invisiveis ao mundo exterior.
-
-Interface: lista de servicos fornecidos por um componente. E o contato com o mundo exterior, que define o que pode
-ser feito com um objeto dessa classe.
-
-Exemplo: controle remoto
-
-Vantages de encapsular:
-1. tornar mudancas invisiveis
-2. facilitar a reutilizacao do codigo
-3. reduzir efeitos colaterais
-
-Como encapsular? -> controle remoto
 
