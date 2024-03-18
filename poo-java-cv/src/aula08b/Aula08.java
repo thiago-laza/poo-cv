@@ -1,8 +1,6 @@
-package aula07b;
+package aula08b;
 
-import aula08b.Lutador;
-
-public class Aula07 {
+public class Aula08 {
     public static void main(String[] args){
         int tamanhoLinha = 50;
         String linhaHifen = "-".repeat(tamanhoLinha);
