@@ -56,10 +56,9 @@ public class Aula08 {
         //Usando a classe luta (Agragacao)
         System.out.println(linhaHifen);
         Luta luta1 = new Luta();
-        luta1.marcarLuta(lutadores[0],lutadores[0]);
+        luta1.marcarLuta(lutadores[2],lutadores[3]);
         luta1.lutar();
-        lutadores[0].status();
-        lutadores[1].status();
+
 
 
     }

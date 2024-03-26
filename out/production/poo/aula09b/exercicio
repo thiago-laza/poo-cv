@@ -1,0 +1,35 @@
+-> criar uma classe pessoa:
+
+    Pessoa
+    Atributos
+    -nome
+    -idade
+    -sexo
+    Metodos
+    +fazerAniver
+
+-> criar uma classe livro
+
+    Livro
+    Atributos
+    -titulo
+    -autor
+    -totPaginas
+    -pagAtual
+    -aberto
+    -leitor
+    Metodos
+    +detalhes()
+
+-> criar uma interface
+
+    Publicacao
+    +abri
+    +fechar
+    +folhear
+    +avancarPag
+    +voltarPag
+
+
+OBS: Criar uma relacao entre as classes Pessoa e Livro (agragacao).
+OBS: A interface Publicacao se relaciona com a classe Livro.
