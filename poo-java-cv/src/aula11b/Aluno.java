@@ -1,10 +1,10 @@
-package aula10b;
-
-public class Aluno extends Pessoa{
-    //Atributos
+package aula11b;
+//heranca pra diferenca:
+//Aluno e especializacao com relacao a Pessoa
+//Pessoa e generalizacoa com relacao a Aluno
+public  class Aluno extends Pessoa {
     private int matricula;
     private String curso;
-    //Getters e Setters
 
     public int getMatricula() {
         return matricula;
@@ -21,8 +21,15 @@ public class Aluno extends Pessoa{
     public void setCurso(String curso) {
         this.curso = curso;
     }
-    //Metodos
-    public void cancelarMatricula(){
-        System.out.println("Matricula sera cancelada.");
+
+
+
+    public void pagarMensalidade() {
+        System.out.println("Pagando mensalidade do aluno " + getNome());
     }
+
+
 }
+
+
+

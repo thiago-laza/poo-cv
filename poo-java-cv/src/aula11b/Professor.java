@@ -1,10 +1,9 @@
-package aula10b;
+package aula11b;
 
-public class Professor extends Pessoa {
-    //Atributos
+public class Professor extends Pessoa{
     private String especialidade;
     private double salario;
-    //Getters e Setters
+
     public String getEspecialidade() {
         return especialidade;
     }
@@ -20,8 +19,8 @@ public class Professor extends Pessoa {
     public void setSalario(double salario) {
         this.salario = salario;
     }
-    //Metodos
-    public void receberAum(double aum){
-        setSalario(getSalario() + aum);
+
+    public void receberAumento(){
+
     }
 }

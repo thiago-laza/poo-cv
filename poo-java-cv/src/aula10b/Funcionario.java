@@ -22,6 +22,6 @@ public class Funcionario extends Pessoa{
     }
     //Metodos
     public void mudarTrabalho(){
-
+        this.trabalhando = ! this.trabalhando;
     }
 }

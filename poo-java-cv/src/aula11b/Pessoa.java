@@ -1,11 +1,9 @@
-package aula10b;
+package aula11b;
 
-public class Pessoa {
-    //Atributos
+public abstract class  Pessoa {
     private String nome;
     private int idade;
     private String sexo;
-    //Getters e Setters
 
     public String getNome() {
         return nome;
@@ -31,7 +29,7 @@ public class Pessoa {
         this.sexo = sexo;
     }
 
-    public void fazerAniv(){
+    public final void fazerAniv(){
         setIdade(getIdade() + 1);
     }
 
