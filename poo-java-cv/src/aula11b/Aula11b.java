@@ -18,6 +18,7 @@ public class Aula11b {
         v1.fazerAniv();
         System.out.println(v1.toString());
         System.out.println(linhaHifen);
+        System.out.println("testanddo hp");
 
         //Instanciando a classe Aluno
         Aluno a1 = new Aluno();
