@@ -12,6 +12,6 @@ public class Tecnico extends Aluno{
     }
 
     public void praticar(){
-
+        System.out.println(getNome() + " praticando: " + getCurso());
     }
 }

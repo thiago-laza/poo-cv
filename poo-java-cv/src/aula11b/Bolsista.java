@@ -7,8 +7,9 @@ public class Bolsista extends Aluno{
         return bolsa;
     }
 
-    public void setBolsa(int bolsa) {
+    public void setBolsa(double bolsa) {
         this.bolsa = bolsa;
+        System.out.println("Bolsa: R$ " + getBolsa() );
     }
 
     public void renovarBolsa(){

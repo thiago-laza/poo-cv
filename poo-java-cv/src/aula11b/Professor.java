@@ -10,6 +10,7 @@ public class Professor extends Pessoa{
 
     public void setEspecialidade(String especialidade) {
         this.especialidade = especialidade;
+        System.out.println("Especialidade: " + getEspecialidade());
     }
 
     public double getSalario() {
@@ -18,9 +19,11 @@ public class Professor extends Pessoa{
 
     public void setSalario(double salario) {
         this.salario = salario;
+        System.out.println("Salario: R$ " + getSalario());
     }
 
     public void receberAumento(){
-
+        Double novoSalario = salario * 1.25;
+        System.out.println("Salario com aumento: R$ " + novoSalario);
     }
 }
