@@ -2,9 +2,9 @@ package aula12b;
 
 public abstract class Animal {
     //Atributos
-    private double peso;
-    private int idade;
-    private int membros;
+    protected double peso;
+    protected int idade;
+    protected int membros;
 
     //Getters e Setters
 
@@ -33,13 +33,10 @@ public abstract class Animal {
     }
 
     //Metodos
-    public void locomover(){
+    public abstract void locomover();
+    public abstract void alimentar();
+    public abstract void emitirSom();
 
-    }
-    public void alimentar(){
 
-    }
-    public void emitirSom(){
 
-    }
 }
