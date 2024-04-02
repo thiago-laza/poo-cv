@@ -18,17 +18,17 @@ public class Peixe extends Animal{
    //Metodos da classe mae Animal
     @Override
     public void locomover() {
-        System.out.println("Nadando");
+        System.out.println("Locomoção: nadando");
     }
 
     @Override
     public void alimentar() {
-        System.out.println("Comendo substancias");
+        System.out.println("Alimentação: comendo substancias");
     }
 
     @Override
     public void emitirSom() {
-        System.out.println("Peixe nao faz som");
+        System.out.println("Emissão de som: peixe nao faz som");
     }
 
     //Metodos

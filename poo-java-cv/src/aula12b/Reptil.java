@@ -17,16 +17,16 @@ public class Reptil extends Animal{
     //Metodos da classe mae Animal
     @Override
     public void locomover() {
-        System.out.println("Rastejando");
+        System.out.println("Locomoção: rastejando");
     }
 
     @Override
     public void alimentar() {
-        System.out.println("Comendo vegetais");
+        System.out.println("Alimentação: comendo vegetais");
     }
 
     @Override
     public void emitirSom() {
-        System.out.println("Som de reptil");
+        System.out.println("Emissão de som: som de reptil");
     }
 }

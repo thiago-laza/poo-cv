@@ -17,17 +17,17 @@ public class Ave extends Animal{
     //Metodos da classe mae Animal
     @Override
     public void locomover() {
-        System.out.println("Voando");
+        System.out.println("Locomoção: voando");
     }
 
     @Override
     public void alimentar() {
-        System.out.println("Comendo frutas");
+        System.out.println("Alimentação: comendo frutas");
     }
 
     @Override
     public void emitirSom() {
-        System.out.println("Construir ninho");
+        System.out.println("Emissão de som: construir ninho");
     }
 
     //Metodos

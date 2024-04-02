@@ -17,17 +17,17 @@ public class Mamifero extends Animal{
     //Metodos da classe mae Animal
     @Override
     public void locomover() {
-        System.out.println("Correndo");
+        System.out.println("Locomoção: correndo");
     }
 
     @Override
     public void alimentar() {
-        System.out.println("Mamando");
+        System.out.println("Alimentação: mamando");
     }
 
     @Override
     public void emitirSom() {
-        System.out.println("Som de mamifero");
+        System.out.println("Emissão de som: som de mamifero");
     }
 
 
