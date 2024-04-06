@@ -8,4 +8,8 @@ public class Cachorro extends Mamifero{
     public void abanarRabo(){
         System.out.println("Abanado o rabo");
     }
+    @Override
+    public void emitirSom(){
+        System.out.println("Emissão de som: Au! Au! Au!");
+    }
 }

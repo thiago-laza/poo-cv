@@ -42,7 +42,7 @@ public class Aula12b {
         System.out.println(linhaHifen);
 
         //Instanciando a classe Peixe (Filha - especialização da classe Animal)
-        //diferença para a classe Animal: atirbuto corEscama
+        //diferença para a classe Animal: atirbuto corEscama e método soltarBolha()
         //
         Peixe p = new Peixe();
         p.setPeso(0.845);
@@ -62,6 +62,7 @@ public class Aula12b {
         System.out.println(linhaHifen);
 
         //Instanciando a classe Ave (Filha - especialização da classe Animal)
+        //diferança para a classe Animal: atributo corPena e método fazerNinho
         Ave a = new Ave();
         a.setPeso(3.74);
         a.setIdade(5);
@@ -80,6 +81,114 @@ public class Aula12b {
         System.out.println(linhaHifen);
 
         //Instanciando a classe Canguru (Filha - especialização da classe Mamifero)
+        //diferença para classe Mamífero: métodos usarBolsa() e sobreposição do método locomover()
+        Canguru ca = new Canguru();
+        ca.setPeso(41.7);
+        ca.setIdade(5);
+        ca.setMembros(4);
+        ca.setCorPelo("Marrom");
+        System.out.println(linhaHifen);
+        System.out.println("Informações sobre o canguru:");
+        System.out.println("Peso: " + ca.getPeso());
+        System.out.println("Idade: " + ca.getIdade());
+        System.out.println("Membros: " + ca.getMembros());
+        System.out.println("Cor do pelo: " + ca.getCorPelo());
+        ca.locomover();
+        ca.alimentar();
+        ca.emitirSom();
+        ca.usarBolsa();
+        System.out.println(linhaHifen);
+
+        //Instanciando a classe Cachorro(Filha - especialização da classe Mamifero)
+        //diferença para classe Mamífero: métodos enterrarOsso() e abanarRabo()
+        Cachorro cc = new Cachorro();
+        cc.setPeso(15.3);
+        cc.setIdade(1);
+        cc.setMembros(4);
+        cc.setCorPelo("Marrom, branco e preto.");
+        System.out.println(linhaHifen);
+        System.out.println("Informações sobre o cachorro:");
+        System.out.println("Peso: " + cc.getPeso());
+        System.out.println("Idade: " + cc.getIdade());
+        System.out.println("Membros: " + cc.getMembros());
+        System.out.println("Cor do pelo: " + cc.getCorPelo());
+        cc.locomover();
+        cc.alimentar();
+        cc.emitirSom();
+        cc.enterrarOsso();
+        cc.abanarRabo();
+        System.out.println(linhaHifen);
+
+        //Instanciando a classe Cobra (Filha - especialização da classe Reptil)
+        Reptil c = new Reptil();
+        c.setPeso(2.87);
+        c.setIdade(4);
+        c.setMembros(0);
+        c.setCorEscama("Cinza");
+        System.out.println(linhaHifen);
+        System.out.println("Informações sobre a cobra");
+        System.out.println("Peso: " + c.getPeso());
+        System.out.println("Idade: " + c.getIdade());
+        System.out.println("Membros: " + c.getMembros());
+        System.out.println("Cor da escama: " + c.getCorEscama());
+        c.locomover();
+        c.alimentar();
+        c.emitirSom();
+
+        //Instanciando a classe Tartaruga (Filha - especialização da classe Reptil)
+        //diferença para a classe Reptil: sobreposição do método locomover()
+        Tartaruga t = new Tartaruga();
+        t.setPeso(5.8);
+        t.setIdade(12);
+        t.setMembros(4);
+        t.setCorEscama("Marrom");
+        System.out.println(linhaHifen);
+        System.out.println("Informações sobre a tartaruga:");
+        System.out.println("Peso: " + t.getPeso());
+        System.out.println("Idade: " + t.getIdade());
+        System.out.println("Membros: " + t.getMembros());
+        System.out.println("Cor da escama: " + t.getCorEscama());
+        t.locomover();
+        t.alimentar();
+        t.emitirSom();
+        System.out.println(linhaHifen);
+
+        //Instanciando a classe Goldfish (Filha - especialização da classe Peixe)
+        Goldfish g = new Goldfish();
+        g.setPeso(0.987);
+        g.setIdade(1);
+        g.setMembros(0);
+        g.setCorEscama("Amarela");
+        System.out.println(linhaHifen);
+        System.out.println("Informações sobre o goldfish:");
+        System.out.println("Peso: " + g.getPeso());
+        System.out.println("Idade: " + g.getIdade());
+        System.out.println("Membros: " + g.getMembros());
+        System.out.println("Cor da escama: " + g.getCorEscama());
+        g.locomover();
+        g.alimentar();
+        g.emitirSom();
+        g.soltarBolha();
+        System.out.println(linhaHifen);
+
+        //Instanciando a classe Arara (Filha - especialização da classe Ave)
+        Arara ar = new Arara();
+        ar.setPeso(3.74);
+        ar.setIdade(6);
+        ar.setMembros(2);
+        ar.setCorPena("Azul e amarelo");
+        System.out.println(linhaHifen);
+        System.out.println("Informações sobre a arara:");
+        System.out.println("Peso: " + ar.getPeso());
+        System.out.println("Idade: " + ar.getIdade());
+        System.out.println("Membros: " + ar.getMembros());
+        System.out.println("Cor da pena:  " + ar.getCorPena());
+        ar.locomover();
+        ar.alimentar();
+        ar.emitirSom();
+        ar.fazerNinho();
+        System.out.println(linhaHifen);
+
 
 
 
